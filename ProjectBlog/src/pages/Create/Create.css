@@ -1,0 +1,62 @@
+.create {
+    padding-top: 50px;
+}
+
+.createForm {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* .sticky {
+    position: sticky;
+    background-color: gray;
+} */
+.writeText {
+    width: 90%;
+    min-height: 60vh;
+    font-family: inherit;
+    font-size: 20px;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.chooseFile {
+    display: flex;
+    justify-content: flex-start;
+
+}
+.writeInput {
+    font-size: 30px;
+    border: 2px solid black;
+    padding: 5px;
+    width: 90%;
+    margin: 20px
+}
+
+.category {
+    width: 80vw;
+    margin:  10px 10%;
+    padding: 10px;
+}
+.submitButton {
+    position: absolute;
+    margin-left: 10%;
+    color: white;
+    background-color: teal;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.createImg {
+    margin-left: 150px;
+    width: 70vw;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
