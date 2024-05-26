@@ -4,7 +4,7 @@ import { useState } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import Home from "./pages/Home"
-import { Create } from "./pages/create"
+import { Create } from "./pages/Create"
 import Login from "./pages/Login"
 import { signOut } from "firebase/auth"
 import { auth } from "./firebase-config"
