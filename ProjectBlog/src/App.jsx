@@ -1,41 +1,17 @@
-import { useState } from 'react'
-/* import Create from "./components/create" */
-/* import Author from "./components/Author" */
-import './App.css'
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
-import Home from "./pages/Home"
-import { Create } from "./pages/Create"
-import Login from "./pages/Login"
-import { signOut } from "firebase/auth"
-import { auth } from "./firebase-config"
-
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [isAuth, setIsAuth] = useState(false) 
-  
-  const signUserOut = () => {
-    signOut(auth).then(() => {
-      localStorage.clear()
-      setIsAuth(false)
-      window.location.pathname = "/login"
-    })
-  }
-
   return (
-    <Router>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/create">Create</Link>
-        {!isAuth ? <Link to="/login">Login</Link> : <button onClick={signUserOut}>Log Out</button>}
-      </nav>
+    <BrowserRouter>
+      <Navbar />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/create' element={<Create />} />
-        <Route path='/login' element={<Login setIsAuth={setIsAuth}/>} />
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/read/:id" element={<Article />}></Route>
       </Routes>
-      
-    </Router>
-  )
+      <Footer />
+    </BrowserRouter>
+  );
 }
-
-export default App
+export default App;
