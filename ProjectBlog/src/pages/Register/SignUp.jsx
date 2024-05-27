@@ -60,7 +60,7 @@ function SignUp() {
         {success ? (
           <section>
             <p>
-              <Link to="./Home">Home</Link>
+              <Link to="./home">Home</Link>
             </p>
           </section>
         ) : (
@@ -74,10 +74,10 @@ function SignUp() {
             </p>
             <h1 className="h1-register">Register</h1>
             <form onSubmit={handleSubmit}>
-              <label htmlFor="username">Username:</label>
+              <label htmlFor="username2">Username:</label>
               <input
                 type="text"
-                id="username"
+                id="username2"
                 ref={userRef}
                 autoComplete="off"
                 onChange={(e) => setUser(e.target.value)}
@@ -151,10 +151,10 @@ function SignUp() {
               >
                 Must match the first password input field.
               </p>
-              <label htmlFor="email">Email:</label>
+              <label htmlFor="email1">Email:</label>
               <input
                 type="email"
-                id="email"
+                id="email1"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
@@ -185,7 +185,7 @@ function SignUp() {
               Already registered?
               <br />
               <span className="line">
-                <Link to="./Login">Login</Link>
+                <Link to="/login">Login</Link>
               </span>
             </p>
           </section>
