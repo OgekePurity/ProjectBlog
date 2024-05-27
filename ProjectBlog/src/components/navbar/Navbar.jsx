@@ -29,13 +29,13 @@ function Navbar() {
       <div className="navbarRight">
         <div className="navbarLinks">
           <span className="navbarLink">
-            <Link to="">Homepage</Link>
+            <Link to="/home">Homepage</Link>
           </span>
-          <span className="navbarLink" to="./Profile">
-            Profile
+          <span className="navbarLink"> <Link to="/myProfile">My Profile</Link>
           </span>
-          <span className="navbarLink" to="./CreatePost">
-            Create
+          <span className="navbarLink" ><Link to="/create">Create</Link>
+          </span>
+          <span className="navbarLink" ><Link to="/author">Author</Link>
           </span>
         </div>
         <div className="navbarIcons">
@@ -52,7 +52,7 @@ function Navbar() {
           <BiBell />
           <span className="navbarIconBadge">8</span>
         </div>
-        <Link to="./">
+        <Link to="/myProfile">
           <img src="/assets/person/user.jpg" alt="" className="navbarImg" />
         </Link>
       </div>

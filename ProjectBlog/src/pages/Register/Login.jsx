@@ -30,7 +30,7 @@ function Login() {
         {success ? (
           <section>
             <p>
-              <Link to="/Home">Home</Link>
+              <Link to="/home">Home</Link>
             </p>
           </section>
         ) : (
@@ -44,10 +44,10 @@ function Login() {
             </p>
             <h1>LogIn</h1>
             <form onSubmit={handleSubmit}>
-              <label htmlFor="username">Username:</label>
+              <label htmlFor="username1">Username:</label>
               <input
                 type="text"
-                id="username"
+                id="username1"
                 ref={userRef}
                 autoComplete="off"
                 onChange={(e) => setUser(e.target.value)}
@@ -56,10 +56,10 @@ function Login() {
                 placeholder="Enter Your UserName"
               />
 
-              <label htmlFor="password">Password:</label>
+              <label htmlFor="password1">Password:</label>
               <input
                 type="password"
-                id="password"
+                id="password1"
                 onChange={(e) => setPwd(e.target.value)}
                 value={pwd}
                 required
@@ -71,7 +71,7 @@ function Login() {
               Need an Account?
               <br />
               <span className="line">
-                <Link to="/SignUp">Sign Up</Link>
+                <Link to="/signup">Sign Up</Link>
               </span>
             </p>
           </section>

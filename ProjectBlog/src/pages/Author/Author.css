@@ -4,21 +4,24 @@ img {
     border-radius: 50%;
     padding: 20px;
 }
-
 .rev-article {
     border: 2px solid black;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 10px;
-    width: 80vw;
+    margin: 5px;
+    width: 50vw;
+    border-radius: 5px;
+    position: relative;
+
 }
 
 .rev-article > img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    padding: 20px;
+    padding: 5px;
+    align-self: center;
 }
 
 .prof-container {
@@ -45,3 +48,15 @@ img {
     display: block;
     z-index: 999;
 } */
+section {
+    max-width: 400px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    /* box-shadow: 0 2px 2px #00000054; */
+    /* background-color: whitesmoke; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -14,7 +14,7 @@ export default function Category() {
   };
  */
   return (
-      <fieldset>
+      <fieldset className='category'>
         <legend>Select a category</legend>
 
         <label>
